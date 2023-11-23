@@ -1,7 +1,7 @@
 function TableHeader(){
     /* responsible for rendering the head of our table with the appropriate columns */
     return(
-        <thead>
+      <thead>
         <tr>
           <th>Name</th>
           <th>URL</th>
@@ -32,13 +32,13 @@ const TableBody = (props) => {
   }
 
 
-function Table(){
+function Table(props){
     return(
         <table>
         <TableHeader/>
-        <TableBody/>
+        <TableBody linkData={props.linkData} removeLink={props.removeLink}/>
         </table>
-    )
+  )
 }
 
 export default Table

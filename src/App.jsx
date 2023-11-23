@@ -1,13 +1,12 @@
 import LinkContainer from "./components/LinkContainer"
 
-function App(){
+export default function App(){
 
   return(
     <div>
-      <LinkContainer />
+      <LinkContainer/>
+      {/* Somethign that should be styled by pico */}
+      {/* <a href="" role="button" className="outline">a button</a> */}
     </div>
   )
 }
-
-export default App
-
